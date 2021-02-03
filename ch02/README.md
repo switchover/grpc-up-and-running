@@ -4,7 +4,7 @@
 - 코드 2-5 : [product_info.proto](product_info.proto)
 - 코드 2-6 : [productinfo_service.go](productinfo/service/productinfo_service.go)
 - 코드 2-7 : [main.go](productinfo/service/main.go)
-- 코드 2-8 : [build.gradle]
+- 코드 2-8 : [build.gradle](product-info-service/build.gradle)
 - 코드 2-9 : [ProductInfoImpl.java](product-info-service/src/main/java/ecommerce/ProductInfoImpl.java)
 - 코드 2-10 : [ProductInfoServer.java](product-info-service/src/main/java/ecommerce/ProductInfoServer.java)
 
@@ -38,7 +38,7 @@
     )
     ```
 
-
+---
 # `ProductInfo` 서비스 구현 (Go)
 
 ## 1. protobuf 정의 파일 생성

@@ -6,6 +6,7 @@
 - 코드 1-3 : [productinfo/go/main.go](productinfo/go/main.go)
 - 코드 1-4 : [productinfo/java/src/main/java/Main.java](productinfo/java/src/main/java/Main.java)
 
+---
 # `ProductInfo` 서비스 구현 (Go)
 
 ## 1. protobuf 정의 파일 생성
