@@ -12,7 +12,7 @@
 [ProductInfo.proto](ProductInfo.proto) (코드 1-1)
 
 ## 2. Go 서비스용 모듈 생성
-우선 Go 모듈을 위한 디렉토리를 생성한 후, `go mod` 명령을 통해 다음과 같이 모듈을 생성합니다.,
+우선 Go 모듈을 위한 디렉토리 생성 후, `go mod` 명령을 통해 다음과 같이 모듈을 생성합니다.
 ```shell
 mkdir -p productinfo/go
 cd productinfo/go
@@ -21,12 +21,12 @@ go mod init github.com/grpc-up-and-running/samples/ch02/productinfo/go
 - 1장의 예제이지만, 책에 나와 있는 코드와 맞추기 위해서 `ch02` 디렉토리를 사용
 
 ## 3. protobuf 파일 복사
-외부에 정의된 `ProductInfo.proto` 파일을 `proto` 디렉토리 생성 후 이 디렉토리로 복사합니다.
+별도로 정의된 `ProductInfo.proto` 파일을 `proto` 디렉토리 생성 후 복사합니다.
 ```shell
 mkdir proto
 cp ../../ProductInfo.proto proto
 ```
-- `ProductInfo.proto`는 임의의 위치에서 복사함 (위 예는 현재 예제 디렉토리 구성의 경우임)
+- `ProductInfo.proto`는 임의 위치에서 복사함 (위 복사 경로는 현재 예제 디렉토리 구성의 예)
 
 ## 4. Go 언어 Skeleton 생성 
 다음과 같이 이미 설치된 `protoc` 명령을 통해 skeleton 코드를 생성합니다.
@@ -35,7 +35,7 @@ protoc -I proto proto/ProductInfo.proto --go_out=plugins=grpc:proto
 ```
 
 ## 5. Go 서비스 구현
-다음과 같이 서비스 구현을 위한 패키지 생성 후, Go 서비스를 구현합니다.
+다음과 같이 서비스를 구현합니다.
 [main.go](productinfo/go/main.go) (코드 1-2)
 ```go
 package main
@@ -84,7 +84,7 @@ func (s *server) GetProduct(ctx context.Context, in *pb.ProductID) (*pb.Product,
 ```
 
 ## Go main 함수 구현
-이제 마지막으로 Go의 main 함수룰 다음과 같이 추가합니다.
+Go의 main 함수를 다음과 같이 추가합니다.
 [main.go](productinfo/go/main.go) (코드 1-3)
 ```go
 const port = ":8080"
@@ -100,12 +100,13 @@ func main() {
 ```
 
 ## 6. Go 서버 빌드 및 실행
-이제 다음과 같이 서버를 빌드하고 실행합니다.
+다음과 같이 서버를 빌드하고 실행합니다.
 ```shell
 go build -i -v -o bin/server
 bin/server
 ```
 
+---
 # `ProductInfo` 클라이언 구현 (Java)
 ## 1. Java 클라이언트 프로젝트 디렉토리 구조 생성
 다음과 같이 gradle 프로젝트를 생성합니다.
@@ -120,7 +121,7 @@ mkdir src/main/proto
 다음과 같은 [build.gradle](productinfo/java/build.gradle) 파일을 생성합니다.
 
 ## 3. protobuf 파일 복사
-외부에 정의된 `ProductInfo.proto` 파일을 gradle 프로젝트의 `src/main/proto` 디렉토리로 복사합니다.
+별도로 정의된 `ProductInfo.proto` 파일을 gradle 프로젝트의 `src/main/proto` 디렉토리로 복사합니다.
 ```shell
 cp ../../ProductInfo.proto src/main/proto
 ```
@@ -134,7 +135,7 @@ gradle build
 - stub java 코드는 `build/generated/source/proto/main/grpc/` 및 `build/generated/source/proto/main/java/` 디렉토리 하위에 밑에 생성됨
 
 ## 5. Java 클라이언트 구현
-이제 다음과 같이 클라이언트를 구현합니다. 
+다음과 같이 클라이언트를 구현합니다. 
 [Main.java](productinfo/java/src/main/java/Main.java) (코드 1-4)
 ```java
 import ecommerce.ProductInfoGrpc;
@@ -169,14 +170,14 @@ public class Main {
   정의된 proto 파일(`ProductInfo.proto`)는 일반 객체인 `ProductID`의 타입을 갖는다.
  
 ## 6. Java 클라이언트 빌드
-이제 다음과 같이 gradle을 통해 클라이언트를 다시 빌드합니다.
+다음과 같이 gradle을 통해 클라이언트를 다시 빌드합니다.
 ```shell
 gradle build
 ```
 - `build/libs/java.jar`로 빌드됨
 
 ## 7. Java 클라드이언트 실행
-최종적으로 서버(`bin/server`)가 실행된 상태에서 다음과 같이 jar를 실행하면 됩니다.
+최종적으로 서버(`bin/server`)가 실행된 상태에서 다음과 같이 jar를 실행합니다.
 ```shell
 java -jar build/libs/java.jar
 ```
