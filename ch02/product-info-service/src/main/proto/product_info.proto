@@ -10,6 +10,7 @@ message Product {
     string id = 1;
     string name = 2;
     string description = 3;
+    float price = 4;
 }
 
 message ProductID {
