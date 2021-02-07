@@ -53,9 +53,19 @@ func (s *server) GetOrder(ctx context.Context,
 go build -i -v -o bin/server server/main.go
 ```
 
-## 7. Go 클라이언트 구현
+## 7. Go 클라이언트 구현 참조
 클라이언트 구현은 다음과 같습니다.
 [main.go](01-SimpleRPC/ordermgt/client/main.go) (코드 3-3)
 ```go
 // 일부 코드
+// 서버와의 연결을 구성한다.
+// ...
+orderMgtClient := pb.NewOrderManagementClient(conn)
+// ...
+
+// 주문 정보 가져오기
+retrievedOrder, rr := orderMgtClient.GetOrder(ctx,
+    &wrapper.StringValue{Value: "106"})
+log.Print("GetOrder Response -> : ", retrievedOrder)
+// ...
 ```
