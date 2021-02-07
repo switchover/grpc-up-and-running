@@ -8,7 +8,7 @@
 - 코드 2-9 : [ProductInfoImpl.java](product-info-service/src/main/java/ecommerce/ProductInfoImpl.java)
 - 코드 2-10 : [ProductInfoServer.java](product-info-service/src/main/java/ecommerce/ProductInfoServer.java)
 - 코드 2-11 : [product_client.go](productinfo/client/productinfo_client.go)
-- 코드 2-12 : [ProductInfoClient.java](product-info-service/src/main/java/ecommerce/ProductInfoClient.java)
+- 코드 2-12 : [ProductInfoClient.java](product-info-client/src/main/java/ecommerce/ProductInfoClient.java)
 
 ## 정오
 ### 본문 부분
@@ -420,7 +420,7 @@ gradle build
 
 ## 5. Java 클라이언트 구현
 이제 다음과 같이 클라이언트를 구현합니다. 
-[ProductInfoClient.java](product-info-service/src/main/java/ecommerce/ProductInfoClient.java) (코드 2-12)
+[ProductInfoClient.java](product-info-client/src/main/java/ecommerce/ProductInfoClient.java) (코드 2-12)
 ```java
 package ecommerce;
 
