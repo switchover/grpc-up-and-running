@@ -138,7 +138,7 @@ func (s *server) GetProduct(ctx context.Context,
 ```
 - (정오) 책에서의 `import` 처리에는 `google.golang.org/grpc/codes` 패키지 등에 대한 import가 누락되고, 사용되지 않는 `errors`, `log` 패키지가 포함되어 있다.
 
-## Go main 함수 구현
+## 6. Go main 함수 구현
 이제 마지막으로 Go의 main 함수룰 다음과 같이 추가합니다.
 [main.go](productinfo/service/main.go) (코드 2-7)
 ```go
@@ -172,7 +172,7 @@ func main() {
 }
 ```
 
-## 6. Go 서버 빌드 및 실행
+## 7. Go 서버 빌드 및 실행
 다음과 같이 서버를 빌드하고 실행합니다.
 ```shell
 go build -i -v -o bin/server
@@ -311,6 +311,7 @@ Go 모듈을 위한 디렉토리 생성 후, `go mod` 명령을 통해 다음과
 mkdir -p productinfo/client
 cd productinfo/client
 go mod init productinfo/client
+```
 
 ## 2. protobuf 파일 복사
 별도로 정의된 `product_info.proto` 파일을 `ecommerce` 디렉토리 생성 후 이 디렉토리로 복사합니다.
