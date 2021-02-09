@@ -4,7 +4,7 @@
 - 코드 3-1 : [order_management.proto](01-SimpleRPC/order_management.proto)
 - 코드 3-2 : [main.go](01-SimpleRPC/ordermgt/service/server/main.go)
 - 코드 3-3 : [main.go](01-SimpleRPC/ordermgt/client/main.go)
-- 코드 3-4 : [order_management.proto](02-ServerStreaming/order_management.proto)
+- 코드 3-4 : [order_management.proto](02-ServerStreamingRPC/order_management.proto)
 - 코드 3-5 : [main.go](02-ServerStreamingRPC/ordermgt/service/server/main.go)
 - 코드 3-6 : [main.go](02-ServerStreamingRPC/ordermgt/client/main.go)
 
@@ -78,7 +78,7 @@ log.Print("GetOrder Response -> : ", retrievedOrder)
 # 서버 스트리밍 RPC(Server Streaming RPC) 서비스 구현 (Go)
 
 ## 1. protobuf 정의 파일 수정
-[order_management.proto](02-ServerStreaming/order_management.proto) (코드 3-4)
+[order_management.proto](02-ServerStreamingRPC/order_management.proto) (코드 3-4)
 
 ## 2. Go 서비스용 모듈 생성
 Go 모듈을 위한 디렉토리 생성 후, `go mod` 명령을 통해 다음과 같이 모듈을 생성합니다.
