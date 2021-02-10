@@ -6,8 +6,8 @@ package ecommerce;
 
 service OrderManagement {
     // ...
-    rpc searchOrders(google.protobuf.StringValue) returns (stream Order);
-    // ...
+    rpc processOrders(stream google.protobuf.StringValue)
+        returns (stream CombinedShipment);
 }
 
 message Order {
@@ -16,4 +16,10 @@ message Order {
     string description = 3;
     float price = 4;
     string destination = 5;
+}
+
+message CombinedShipment {
+    string id = 1;
+    string status = 2;
+    repeated Order ordersList = 3;
 }
