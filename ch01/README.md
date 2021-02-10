@@ -6,6 +6,12 @@
 - 코드 1-3 : [productinfo/go/main.go](productinfo/go/main.go)
 - 코드 1-4 : [productinfo/java/src/main/java/Main.java](productinfo/java/src/main/java/Main.java)
 
+## 정오
+### 본문 부분
+| 정오 | 수정 전 | 수정 후 |
+| ------------- | ----- | ----- |
+| 45 페이지 4행 | 기존 클라이언트-서버 통신에 근본적으로 다른 접근 방법의 고정된 계약 방식을 사용한다. | 기존의 클라이언트-서버 통신에 근본적으로 다른 접근 방식을 제공한다. 반면 gRPC는 클라이언트와 서버간 원격 메서드에 고정된 계약 방식을 사용한다 |
+
 ---
 # `ProductInfo` 서비스 구현 (Go)
 
