@@ -141,7 +141,8 @@ func asyncClientBidirectionalRPC(
 		}
 		log.Printf("Combined shipment : ", combinedShipment.OrdersList)
 	}
-	<-c
+	//<-c
+	close(c)
 }
 ```
 - 도서 상 예제에는 `func asyncClientBidirectionalRPC()` 함수 정의 부분이 같이 기술되어 있으나, 별도로 구분하여 정리 필요
