@@ -1,20 +1,21 @@
 # Chapter 2 : gRPC 시작
 
 ## 예제 코드 리스트
-- 코드 2-5 : [product_info.proto](product_info.proto)
-- 코드 2-6 : [productinfo_service.go](productinfo/service/productinfo_service.go)
-- 코드 2-7 : [main.go](productinfo/service/main.go)
-- 코드 2-8 : [build.gradle](product-info-service/build.gradle)
-- 코드 2-9 : [ProductInfoImpl.java](product-info-service/src/main/java/ecommerce/ProductInfoImpl.java)
-- 코드 2-10 : [ProductInfoServer.java](product-info-service/src/main/java/ecommerce/ProductInfoServer.java)
-- 코드 2-11 : [product_client.go](productinfo/client/productinfo_client.go)
-- 코드 2-12 : [ProductInfoClient.java](product-info-client/src/main/java/ecommerce/ProductInfoClient.java)
+- 코드 2-5 (서비스 정의 파일) : [product_info.proto](product_info.proto)
+- 코드 2-6 (Go 서비스 구현): [productinfo_service.go](productinfo/service/productinfo_service.go)
+- 코드 2-7 (Go 서버 구현): [main.go](productinfo/service/main.go)
+- 코드 2-8 (Gradle 빌드 파일): [build.gradle](product-info-service/build.gradle)
+- 코드 2-9 (Java 서비스 구현): [ProductInfoImpl.java](product-info-service/src/main/java/ecommerce/ProductInfoImpl.java)
+- 코드 2-10 (Java 서버 구현): [ProductInfoServer.java](product-info-service/src/main/java/ecommerce/ProductInfoServer.java)
+- 코드 2-11 (Go 클라이언트 구현): [product_client.go](productinfo/client/productinfo_client.go)
+- 코드 2-12 (Java 클라이언트 구현): [ProductInfoClient.java](product-info-client/src/main/java/ecommerce/ProductInfoClient.java)
 
 ## 정오
 ### 본문 부분
 | 정오 | 수정 전 | 수정 후 |
 | ------------- | ----- | ----- |
 | [p.54 하단 코드 예시 캡션] | 코드 2-4. | 코드 2-5. |
+| [p.66 옮긴이 메모] | 코드 2-4. | 코드 2-5. |
 
 ### 코드 부분
 - 54, 55 페이지 코드 2-5. message 정의 부분 : `price` 정의 추가
