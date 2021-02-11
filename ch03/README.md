@@ -24,7 +24,14 @@
     ```
     client := pb.NewOrderManagementClient(conn)
     ```
-
+- 106 페이지 코드 3-12. `asyncClientBidirectionalRPC()` 함수 마지막 부분 : channel 종료 처리
+    ```
+    <-c
+    ```
+    :arrow_right:
+    ```
+    close(c)
+    ```
 ---
 # 세부 세션별 예제
 

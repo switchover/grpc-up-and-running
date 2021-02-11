@@ -80,7 +80,8 @@ func asyncClientBidirectionalRPC(
 		}
 		log.Printf("Combined shipment : ", combinedShipment.OrdersList)
 	}
-	<-c
+	//<-c
+	close(c)
 }
 
 //---------------------------------------------------------
