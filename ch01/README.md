@@ -1,10 +1,10 @@
 # Chapter 1 : gRPC 소개
 
 ## 예제 코드 리스트
-- 코드 1-1 : [ProductInfo.proto](ProductInfo.proto)
-- 코드 1-2 : [productinfo/go/main.go](productinfo/go/main.go)
-- 코드 1-3 : [productinfo/go/main.go](productinfo/go/main.go)
-- 코드 1-4 : [productinfo/java/src/main/java/Main.java](productinfo/java/src/main/java/Main.java)
+- 코드 1-1 (서비스 정의 파일) : [ProductInfo.proto](ProductInfo.proto)
+- 코드 1-2 (Go 서비스 구현): [productinfo/go/main.go](productinfo/go/main.go)
+- 코드 1-3 (Go main 구현): [productinfo/go/main.go](productinfo/go/main.go)
+- 코드 1-4 (Java 클라이언트 구현): [productinfo/java/src/main/java/Main.java](productinfo/java/src/main/java/Main.java)
 
 ## 정오
 ### 본문 부분
