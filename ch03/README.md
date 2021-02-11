@@ -31,7 +31,7 @@
 * 단순 RPC 서비스 구현 (Go) : [Simple RPC](./01-SimpleRPC)
 * 서버 스트리밍 RPC 서비스 구현 (Go) : [Server Streaming RPC](./02-ServerStreamingRPC)
 * 클라이언트 스트리밍 RPC 서비스 구현 (Go) : [Client Streaming RPC](./03-ClientStreamingRPC)
-* 양방향 스트리밍 RPC 서비스 구현 (Go) : [Bidirectional Streaming RPC](./03-BidirectionalStreamingRPC)
+* 양방향 스트리밍 RPC 서비스 구현 (Go) : [Bidirectional Streaming RPC](./04-BidirectionalStreamingRPC)
 
 ---
 # 최종 코드
