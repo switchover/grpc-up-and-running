@@ -28,7 +28,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
 	defer cancel()
 
-	client := c
+	client := c // 아래 코드 예제 상에 c와 client를 혼용으로 사용하기에 client도 추가
 
 	//---------------------------------------------------------
 	// 코드 3-12 부분

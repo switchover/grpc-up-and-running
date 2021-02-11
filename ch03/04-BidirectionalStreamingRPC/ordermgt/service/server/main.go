@@ -20,7 +20,9 @@ var orderMap = make(map[string]pb.Order)
 type server struct {
 }
 
+//---------------------------------------------------------
 // 코드 3-11 부분
+//---------------------------------------------------------
 func (s *server) ProcessOrders(
 	stream pb.OrderManagement_ProcessOrdersServer) error {
 	// ...
@@ -42,6 +44,7 @@ func (s *server) ProcessOrders(
 		}
 		// 목적지를 기준으로 배송을 구성하는 로직
 		// ...
+		//---------------------------------------------------------
 		destination := orderMap[orderId.GetValue()].Destination
 		shipment, found := combinedShipmentMap[destination]
 
@@ -56,6 +59,7 @@ func (s *server) ProcessOrders(
 			combinedShipmentMap[destination] = comShip
 			log.Print(len(comShip.OrdersList), comShip.GetId())
 		}
+		//---------------------------------------------------------
 
 		//
 		if batchMarker == orderBatchSize {
@@ -72,6 +76,8 @@ func (s *server) ProcessOrders(
 		}
 	}
 }
+
+//---------------------------------------------------------
 
 func main() {
 	initSampleData()
