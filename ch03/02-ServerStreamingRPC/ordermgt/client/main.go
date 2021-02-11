@@ -24,7 +24,9 @@ func main() {
 	}
 	defer conn.Close()
 
+	//---------------------------------------------------------
 	// 코드 3-6 부분
+	//---------------------------------------------------------
 	c := pb.NewOrderManagementClient(conn)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
 	defer cancel()
@@ -40,4 +42,5 @@ func main() {
 		// 기타 가능한 에러의 처리
 		log.Print("Search Result : ", searchOrder)
 	}
+	//---------------------------------------------------------
 }

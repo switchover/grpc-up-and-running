@@ -20,7 +20,9 @@ var orderMap = make(map[string]pb.Order)
 type server struct {
 }
 
+//---------------------------------------------------------
 // 코드 3-8 부분
+//---------------------------------------------------------
 func (s *server) UpdateOrders(stream pb.OrderManagement_UpdateOrdersServer) error {
 	ordersStr := "Updated Order IDs : "
 	for {
@@ -36,6 +38,8 @@ func (s *server) UpdateOrders(stream pb.OrderManagement_UpdateOrdersServer) erro
 		ordersStr += order.Id + ", "
 	}
 }
+
+//---------------------------------------------------------
 
 func main() {
 	initSampleData()

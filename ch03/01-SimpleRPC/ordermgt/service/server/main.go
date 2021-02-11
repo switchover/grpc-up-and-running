@@ -20,13 +20,17 @@ var orderMap = make(map[string]pb.Order)
 type server struct {
 }
 
+//---------------------------------------------------------
 // 코드 3-2 부분
+//---------------------------------------------------------
 func (s *server) GetOrder(ctx context.Context,
 	orderId *wrapper.StringValue) (*pb.Order, error) {
 	// 서비스 구현
 	ord := orderMap[orderId.Value]
 	return &ord, nil
 }
+
+//---------------------------------------------------------
 
 func main() {
 	initSampleData()

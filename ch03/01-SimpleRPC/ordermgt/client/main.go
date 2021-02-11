@@ -23,7 +23,9 @@ func main() {
 	}
 	defer conn.Close()
 
+	//---------------------------------------------------------
 	// 코드 3-3 부분
+	//---------------------------------------------------------
 	orderMgtClient := pb.NewOrderManagementClient(conn)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
 	defer cancel()
@@ -32,6 +34,7 @@ func main() {
 	retrievedOrder, rr := orderMgtClient.GetOrder(ctx,
 		&wrapper.StringValue{Value: "106"})
 	log.Print("GetOrder Response -> : ", retrievedOrder)
+	//---------------------------------------------------------
 
 	if rr != nil {
 		log.Fatalf("GetOrder() error : %v", rr)

@@ -26,7 +26,9 @@ func main() {
 	updOrder2 := pb.Order{Id: "103", Items: []string{"Apple Watch S4", "Mac Book Pro", "iPad Pro"}, Destination: "San Jose, CA", Price: 2800.00}
 	updOrder3 := pb.Order{Id: "104", Items: []string{"Google Home Mini", "Google Nest Hub", "iPad Mini"}, Destination: "Mountain View, CA", Price: 2200.00}
 
+	//---------------------------------------------------------
 	// 코드 3-9 부분
+	//---------------------------------------------------------
 	//c := pb.NewOrderManagementClient(conn)
 	client := pb.NewOrderManagementClient(conn)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
@@ -62,4 +64,5 @@ func main() {
 			updateStream, err, nil)
 	}
 	log.Printf("Update Orders Res : %s", updateRes)
+	//---------------------------------------------------------
 }

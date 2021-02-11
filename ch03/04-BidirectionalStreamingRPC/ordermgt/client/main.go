@@ -30,7 +30,9 @@ func main() {
 
 	client := c
 
+	//---------------------------------------------------------
 	// 코드 3-12 부분
+	//---------------------------------------------------------
 	// Process Order
 	streamProcOrder, _ := c.ProcessOrders(ctx)
 	if err := streamProcOrder.Send(
@@ -62,8 +64,12 @@ func main() {
 	}
 
 	<-channel
+	//---------------------------------------------------------
 }
 
+//---------------------------------------------------------
+// 코드 3-12 부분
+//---------------------------------------------------------
 func asyncClientBidirectionalRPC(
 	streamProcOrder pb.OrderManagement_ProcessOrdersClient,
 	c chan struct{}) {
@@ -76,3 +82,5 @@ func asyncClientBidirectionalRPC(
 	}
 	<-c
 }
+
+//---------------------------------------------------------

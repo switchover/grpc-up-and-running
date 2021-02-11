@@ -21,7 +21,9 @@ var orderMap = make(map[string]pb.Order)
 type server struct {
 }
 
+//---------------------------------------------------------
 // 코드 3-5 부분
+//---------------------------------------------------------
 func (s *server) SearchOrders(searchQuery *wrappers.StringValue,
 	stream pb.OrderManagement_SearchOrdersServer) error {
 	for key, order := range orderMap {
@@ -43,6 +45,8 @@ func (s *server) SearchOrders(searchQuery *wrappers.StringValue,
 	}
 	return nil
 }
+
+//---------------------------------------------------------
 
 func main() {
 	initSampleData()
