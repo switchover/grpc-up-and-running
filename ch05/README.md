@@ -1,8 +1,8 @@
 # Chapter 5 : gRPC: 고급 기능
 
 ## 예제 코드 리스트
-- 코드 5-1 (서버 단일 인터셉터), 코드 5-2 (서버 스트리밍 인터셉터) : [main.go](order-service/server/main.go)
-- 코드 5-3 (클라이언트 단일 인터셉터), 코드 5-4 (클라이언트 스트리밍 인터셉터) : [main.go](order-service/client/main.go)
+- 코드 5-1 (서버 단일 인터셉터), 코드 5-2 (서버 스트리밍 인터셉터) : [main.go](01-Interceptors/order-service/server/main.go)
+- 코드 5-3 (클라이언트 단일 인터셉터), 코드 5-4 (클라이언트 스트리밍 인터셉터) : [main.go](01-Interceptors/order-service/client/main.go)
 
 ---
 # 서비스 정의
