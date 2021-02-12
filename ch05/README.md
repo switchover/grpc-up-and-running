@@ -45,6 +45,8 @@
 * 에러 처리 (Go) : [Error Handling](./04-ErrorHandling)
 * 멀티플렉싱 (Go) : [Multiplexing](./05-Multiplexing)
 * 메타데이터 (Go) : [Metadata](./06-Metadata)
+* 로드밸런싱 (Go) : [Load Balancing](./07-LoadBalancing)
+* 압축 (Go) : [Compression](./08-Compression)
 
 ---
 # 서비스 정의
