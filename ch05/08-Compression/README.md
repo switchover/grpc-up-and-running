@@ -1,4 +1,4 @@
-# Section 8 : 압축 (Chapter 5 : gRPC: 고급 기능)
+# Section 8 : 압축 (Chapter 5 : gRPC: 고급 기능)
 
 ----
 # 압축 (Compression) (Go)
@@ -20,3 +20,7 @@ import (
 쿨라이언트 구현도 간단하게 `grpc.UseCompressor()` 함수를 사용하면 됩니다.
 
 이에 대한 코드는 클라이언트 [main.go](order-service/client/main.go)를 참조합니다.
+
+```go
+res, _ := c.AddOrder(ctx, &order1, grpc.UseCompressor(gzip.Name))
+```
