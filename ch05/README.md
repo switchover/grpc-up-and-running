@@ -11,11 +11,34 @@
 - 코드 5-10 (클라이언트 멀티플렉싱) : [main.go](05-Multiplexing/order-service/client/main.go)
 - 코드 5-11 (클라이언트 메타데이터 전송), 코드 5-12 (클라이언트 메타데이터 읽기) : [main.go](06-Metadata/some-service/client/main.go)
 - 코드 5-13 (서비스 메타데이터 읽기), 코드 5-14 (서비스 메타데이터 전송) [main.go](06-Metadata/some-service/server/main.go)
+- 코드 5-15 (네임 리졸버 구현), 코드 5-16 (클라이언트 로드밸런싱 구현): [main.go](07-LoadBalancing/echo/client/main.go)
 
+## 정오
+### 코드 부분
+- 173 페이지 코드 5-15. `Build` 메서드 파라미터 타입 부분 : `resolver.BuildOption` -> `resolver.BuildOptions`
+    ```
+    func (*exampleResolverBuilder) Build(target resolver.Target,
+        cc resolver.ClientConn,
+        opts resolver.BuildOption) (resolver.Resolver, error) {
+    ```
+    :arrow_right:
+    ```
+    func (*exampleResolverBuilder) Build(target resolver.Target,
+        cc resolver.ClientConn,
+        opts resolver.BuildOptions) (resolver.Resolver, error) {
+    ```
+- 174 페이지 코드 5-15. `ResolveNow` 메서드 파라미터 타입 부분 : `resolver.ResolveNowOption` -> `resolver.ResolveNowOptions`
+    ```
+    func (*exampleResolver) ResolveNow(o resolver.ResolveNowOption) {}
+    ```
+    :arrow_right:
+    ```
+    func (*exampleResolver) ResolveNow(o resolver.ResolveNowOptions) {}
+    ```
 ---
 # 세부 세션별 예제
 
-* 기본 주문 서비스 (Go) : [Order Service](./00-OrderService)
+* 기본 주문 서비스 (Go) : [Order Service](./00-OrderService) (5장 전체 공통 사용 예제)
 * 인터셉터 (Go) : [Interceptors](./01-Interceptors)
 * 데드라인 (Go) : [Deadlines](./02-Deadlines)
 * 취소 처리 (Go) : [Cancellation](./03-Cancellation)
