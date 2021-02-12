@@ -3,6 +3,7 @@
 ## 예제 코드 리스트
 - 코드 5-1 (서버 단일 인터셉터), 코드 5-2 (서버 스트리밍 인터셉터) : [main.go](01-Interceptors/order-service/server/main.go)
 - 코드 5-3 (클라이언트 단일 인터셉터), 코드 5-4 (클라이언트 스트리밍 인터셉터) : [main.go](01-Interceptors/order-service/client/main.go)
+- 코드 5-5 (데드라인) : [main.go](02-Deadlines/order-service/client/main.go)
 
 ---
 # 서비스 정의
@@ -45,6 +46,7 @@ gRPC 고급 기능들을 알아 보기 위해 이미 구현된 주문 관리 서
 
 * 기본 주문 서비스 (Go) : [Order Service](./00-OrderService)
 * 인터셉터 (Go) : [Interceptors](./01-Interceptors)
+* 데드라인 (Go) : [Deadlines](./02-Deadlines)
 
 ---
 # 최종 코드

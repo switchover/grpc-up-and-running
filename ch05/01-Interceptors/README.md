@@ -9,7 +9,7 @@
 
 ## 1. 서버 단일 인터셉터(Server-side unary interceptor) 구현
 다음과 같이 Go 서비스에 서버측 단일 인터셉터를 추가합니다.
-[main.go](order-service/server/main.go)
+[main.go](order-service/server/main.go) (코드 5-1)
 
 ```go
 // 서버 - 단일 인터셉터
@@ -37,7 +37,7 @@ func main() {
 
 ## 2. 서버 스트리밍 인터셉터(Server-side streaming interceptor) 구현
 다음과 같이 Go 서비스에 서버측 스트리밍 인터셉터를 추가합니다.
-[main.go](order-service/server/main.go)
+[main.go](order-service/server/main.go) (코드 5-2)
 
 ```go
 // 서버 - 스트리밍 인터셉터
@@ -87,7 +87,7 @@ func main() {
 
 ## 3. 클라이언트 단일 인터셉터(Client-side unary interceptor) 구현
 다음과 같이 Go 클라이언트에 클라이언트측 단일 인터셉터를 추가합니다.
-[main.go](order-service/client/main.go)
+[main.go](order-service/client/main.go) (코드 5-3)
 
 ```go
 func orderUnaryClientInterceptor(
@@ -116,7 +116,7 @@ func main() {
 
 ## 4. 클라이언트 스트리밍 인터셉터(Client-side streaming interceptor) 구현
 다음과 같이 Go 클라이언트에 클라이언트측 스트리밍 인터셉터를 추가합니다.
-[main.go](order-service/client/main.go)
+[main.go](order-service/client/main.go) (코드 5-4)
 
 ```go
 func clientStreamInterceptor(
