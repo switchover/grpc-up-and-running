@@ -1,4 +1,4 @@
-# Section 7 : 로드밸런싱 (Chapter 5 : gRPC: 고급 기능)
+# Section 7 : 로드밸런싱 (Chapter 5 : gRPC: 고급 기능)
 
 ## 예제 코드 리스트
 - 코드 5-15 (네임 리졸버 구현), 코드 5-16 (클라이언트 로드밸런싱 구현): [main.go](echo/client/main.go)
