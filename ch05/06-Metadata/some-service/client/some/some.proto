@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package some;
+
+service Service {
+    rpc SomeRPC(SomeRequest) returns (SomeResponse);
+    rpc SomeStreamingRPC(stream SomeRequest) returns (SomeResponse);
+}
+
+message SomeRequest {
+    string data = 1;
+}
+
+message SomeResponse {
+    string data = 1;
+}

@@ -9,6 +9,8 @@
 - 코드 5-8 (클라이언트 에러 처리) : [main.go](04-ErrorHandling/order-service/client/main.go)
 - 코드 5-9 (서버 멀티플렉싱) : [main.go](05-Multiplexing/order-service/server/main.go)
 - 코드 5-10 (클라이언트 멀티플렉싱) : [main.go](05-Multiplexing/order-service/client/main.go)
+- 코드 5-11 (클라이언트 메타데이터 전송), 코드 5-12 (클라이언트 메타데이터 읽기) : [main.go](06-Metadata/some-service/client/main.go)
+- 코드 5-13 (서비스 메타데이터 읽기), 코드 5-14 (서비스 메타데이터 전송) [main.go](06-Metadata/some-service/server/main.go)
 
 ---
 # 서비스 정의
@@ -55,6 +57,7 @@ gRPC 고급 기능들을 알아 보기 위해 이미 구현된 주문 관리 서
 * 취소 처리 (Go) : [Cancellation](./03-Cancellation)
 * 에러 처리 (Go) : [Error Handling](./04-ErrorHandling)
 * 멀티플렉싱 (Go) : [Multiplexing](./05-Multiplexing)
+* 메타데이터 (Go) : [Metadata](./06-Metadata)
 
 ---
 # 최종 코드
