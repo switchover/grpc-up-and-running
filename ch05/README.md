@@ -13,6 +13,17 @@
 - 코드 5-13 (서비스 메타데이터 읽기), 코드 5-14 (서비스 메타데이터 전송) [main.go](06-Metadata/some-service/server/main.go)
 
 ---
+# 세부 세션별 예제
+
+* 기본 주문 서비스 (Go) : [Order Service](./00-OrderService)
+* 인터셉터 (Go) : [Interceptors](./01-Interceptors)
+* 데드라인 (Go) : [Deadlines](./02-Deadlines)
+* 취소 처리 (Go) : [Cancellation](./03-Cancellation)
+* 에러 처리 (Go) : [Error Handling](./04-ErrorHandling)
+* 멀티플렉싱 (Go) : [Multiplexing](./05-Multiplexing)
+* 메타데이터 (Go) : [Metadata](./06-Metadata)
+
+---
 # 서비스 정의
 5장에서는 다음과 같은 proto 파일을 활용합니다. [order_management.proto](order_management.go)
 ```
@@ -47,17 +58,6 @@ message CombinedShipment {
 
 gRPC 고급 기능들을 알아 보기 위해 이미 구현된 주문 관리 서비스를 활용하여, 부가 기능들을 추가하는 형태로 설명됩니다.
 주문 서비스 구현은 별도의 [기본 주문 서비스](./00-OrderService)를 참조합니다.
-
----
-# 세부 세션별 예제
-
-* 기본 주문 서비스 (Go) : [Order Service](./00-OrderService)
-* 인터셉터 (Go) : [Interceptors](./01-Interceptors)
-* 데드라인 (Go) : [Deadlines](./02-Deadlines)
-* 취소 처리 (Go) : [Cancellation](./03-Cancellation)
-* 에러 처리 (Go) : [Error Handling](./04-ErrorHandling)
-* 멀티플렉싱 (Go) : [Multiplexing](./05-Multiplexing)
-* 메타데이터 (Go) : [Metadata](./06-Metadata)
 
 ---
 # 최종 코드

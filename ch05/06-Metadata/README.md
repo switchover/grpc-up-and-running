@@ -134,6 +134,8 @@ func (s *server) SomeStreamingRPC(
 
 // ...
 ```
+※ 도서에서는 `pb.someRequest`, `pb.someResponse`와 같이 `pb` 패키지의 구조체가 소문자로 되어 있으나, 
+exported names 규칙에 따라 대문자여야 합니다. 따라서 `pb.SomeRequest`, `pb.SomeReponse`와 같이 작성되어야 합니다.
 
 ## 9. 서비스 메타데이터 전송 구현
 서버에서도 다음과 같이 메타데이터를 전송합니다.
@@ -141,7 +143,7 @@ func (s *server) SomeStreamingRPC(
 
 ```go
 func (s *server) SomeRPC(ctx context.Context,
-	in *pb.someRequest) (*pb.someResponse, error) {
+	in *pb.SomeRequest) (*pb.SomeResponse, error) {
 	// 헤더 생성과 전송
 	header := metadata.Pairs("header-key", "val")
 	grpc.SendHeader(ctx, header)
@@ -159,3 +161,5 @@ func (s *server) SomeStreamingRPC(stream pb.Service_SomeStreamingRPCServer) erro
 	stream.SetTrailer(trailer)
 }
 ```
+※ 도서에서는 `pb.someRequest`, `pb.someResponse`와 같이 `pb` 패키지의 구조체가 소문자로 되어 있으나, 
+exported names 규칙에 따라 대문자여야 합니다. 따라서 `pb.SomeRequest`, `pb.SomeReponse`와 같이 작성되어야 합니다.
