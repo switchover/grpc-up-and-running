@@ -7,6 +7,8 @@
 - 코드 5-6 (취소 처리) : [main.go](03-Cancellation/order-service/client/main.go)
 - 코드 5-7 (서버 에러 처리) : [main.go](04-ErrorHandling/order-service/server/main.go)
 - 코드 5-8 (클라이언트 에러 처리) : [main.go](04-ErrorHandling/order-service/client/main.go)
+- 코드 5-9 (서버 멀티플렉싱) : [main.go](05-Multiplexing/order-service/server/main.go)
+- 코드 5-10 (클라이언트 멀티플렉싱) : [main.go](05-Multiplexing/order-service/client/main.go)
 
 ---
 # 서비스 정의
@@ -52,6 +54,7 @@ gRPC 고급 기능들을 알아 보기 위해 이미 구현된 주문 관리 서
 * 데드라인 (Go) : [Deadlines](./02-Deadlines)
 * 취소 처리 (Go) : [Cancellation](./03-Cancellation)
 * 에러 처리 (Go) : [Error Handling](./04-ErrorHandling)
+* 멀티플렉싱 (Go) : [Multiplexing](./05-Multiplexing)
 
 ---
 # 최종 코드
