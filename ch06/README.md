@@ -5,6 +5,10 @@
 - 코드 6-2 (클라이언트 단방향 보안 연결) : [main.go](01-SecureChannel/productinfo/client/main.go)
 - 코드 6-3 (서버 mTLS 보안 연결) : [main.go](02-mTLS/productinfo/server/main.go)
 - 코드 6-4 (클라이언트 mTLS 보안 연결) : [main.go](02-mTLS/productinfo/client/main.go)
+- 코드 6-5 (PerRPCCredentials 인터페이스 구현), 코드 6-6 (클라이언트 베이직 인증 처리) : [main.go](03-BasicAuth/productinfo/client/main.go)
+- 코드 6-7 (서버 베이직 인증처리) : [main.go](03-BasicAuth/productinfo/server/main.go)
+- 코드 6-8 (클라이언트 OAuth 인증 처리) : [main.go](04-OAuth/productinfo/client/main.go)
+- 코드 6-9 (서버 OAuth 인증처리) : [main.go](04-OAuth/productinfo/server/main.go)
 
 ## 정오
 ### 코드 부분
@@ -45,6 +49,8 @@
 * 인증서 만들기 : [Certificates](./00-Certificates) (6장 공통 사용 인증서)
 * 보안 설정 : [Secure Channel](./01-SecureChannel)
 * mTLS(mutual TLS) 설정 : [mTLS](./02-mTLS)
+* 베이직 인증 : [Basic Authentificatio](./03-BasicAuth)
+* OAuth 인증 : [OAuth](./04-OAuth)
 
 
 ---
