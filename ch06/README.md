@@ -51,6 +51,7 @@
 * mTLS(mutual TLS) 설정 : [mTLS](./02-mTLS)
 * 베이직 인증 : [Basic Authentificatio](./03-BasicAuth)
 * OAuth 인증 : [OAuth](./04-OAuth)
+* JWT 및 구글 Token 인증 : [Etc](./05-Etc)
 
 
 ---
