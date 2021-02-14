@@ -2,6 +2,7 @@
 
 ## 예제 코드 리스트
 - 코드 7-1 (서버측 테스트) : [main.go](01-Testing/productinfo/server/main_test.go)
+- 코드 7-2 (클라이언트 mock 테스트) : [prodinfo_mock_test.go](01-Testing/productinfo/client/mock_prodinfo/prodinfo_mock_test.go)
 
 ## 정오
 ### 코드 부분
