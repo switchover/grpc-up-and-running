@@ -16,23 +16,23 @@
 ## 정오
 ### 코드 부분
 - 173 페이지 코드 5-15. `Build` 메서드 파라미터 타입 부분 : `resolver.BuildOption` -> `resolver.BuildOptions`
-    ```
+    ```go
     func (*exampleResolverBuilder) Build(target resolver.Target,
         cc resolver.ClientConn,
         opts resolver.BuildOption) (resolver.Resolver, error) {
     ```
     :arrow_right:
-    ```
+    ```go
     func (*exampleResolverBuilder) Build(target resolver.Target,
         cc resolver.ClientConn,
         opts resolver.BuildOptions) (resolver.Resolver, error) {
     ```
 - 174 페이지 코드 5-15. `ResolveNow` 메서드 파라미터 타입 부분 : `resolver.ResolveNowOption` -> `resolver.ResolveNowOptions`
-    ```
+    ```go
     func (*exampleResolver) ResolveNow(o resolver.ResolveNowOption) {}
     ```
     :arrow_right:
-    ```
+    ```go
     func (*exampleResolver) ResolveNow(o resolver.ResolveNowOptions) {}
     ```
 ---

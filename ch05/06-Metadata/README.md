@@ -33,14 +33,14 @@ message SomeResponse {
 ## 2. Some 서비스용 모듈 생성 및 Go Skeleton 코드 생성
 Go 모듈을 위한 디렉토리 생성 후, go mod 명령을 통해 다음과 같이 모듈을 생성합니다.
 ```shell
-mkdir -p some-service/server
-cd some-service/server
-go mod init some-service/server
+$ mkdir -p some-service/server
+$ cd some-service/server
+$ go mod init some-service/server
 
-mkdir some
-cp ../../some.proto some
+$ mkdir some
+$ cp ../../some.proto some
 
-protoc -I some some/some.proto --go_out=plugins=grpc:some 
+$ protoc -I some some/some.proto --go_out=plugins=grpc:some 
 ```
 
 ## 3. Some 서비스 구현
@@ -49,14 +49,14 @@ protoc -I some some/some.proto --go_out=plugins=grpc:some
 ## 4. Some 클라이언트 모듈 생성 및 Go Stub 코드 생성
 Go 모듈을 위한 디렉토리 생성 후, go mod 명령을 통해 다음과 같이 모듈을 생성합니다.
 ```shell
-mkdir -p some-service/client
-cd some-service/client
-go mod init some-service/client
+$ mkdir -p some-service/client
+$ cd some-service/client
+$ go mod init some-service/client
 
-mkdir some
-cp ../../some.proto some
+$ mkdir some
+$ cp ../../some.proto some
 
-protoc -I some some/some.proto --go_out=plugins=grpc:some 
+$ protoc -I some some/some.proto --go_out=plugins=grpc:some 
 ```
 
 ## 5. Some 클라이언트 구현

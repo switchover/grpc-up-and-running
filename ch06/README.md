@@ -13,27 +13,27 @@
 ## 정오
 ### 코드 부분
 - 185 페이지 코드 6-1. `grpc.ServerOption` 구조체 리터럴 부분 : 뒤에 `,` 추가 필요 (여러 줄을 사용한 경우)
-    ```
+    ```go
     opts := []grpc.ServerOption{
         grpc.Creds(credentials.NewServerTLSFromCert(&cert))
     }
     ```
     :arrow_right:
-    ```
+    ```go
     opts := []grpc.ServerOption{
         grpc.Creds(credentials.NewServerTLSFromCert(&cert)),
     }
     ```
     또는
-    ```
+    ```go
     opts := []grpc.ServerOption{grpc.Creds(credentials.NewServerTLSFromCert(&cert))}
     ```
 - 187 페이지 코드 6-2. `var` 선언 중 `hostname` 지정 부분 : 뒤에 `"` 누락
-    ```
+    ```go
     address = "localhost:50051
     ```
     :arrow_right:
-    ```
+    ```go
     address = "localhost:50051"
     ```
 

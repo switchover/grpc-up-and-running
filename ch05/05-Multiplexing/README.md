@@ -34,13 +34,13 @@ message HelloReply {
 
 다음으로 기존 주문 관리 서비스에 Hello World 서비스에 대한 Go Skeleton 및 Go Stub 코드를 다음과 같이 생성합니다.
 ```shell
-mkdir order-service/server/helloworld
-cp helloworld.proto order-service/server/helloworld
-protoc -I order-service/server/helloworld order-service/server/helloworld/helloworld.proto --go_out=plugins=grpc:order-service/server/helloworld
+$ mkdir order-service/server/helloworld
+$ cp helloworld.proto order-service/server/helloworld
+$ protoc -I order-service/server/helloworld order-service/server/helloworld/helloworld.proto --go_out=plugins=grpc:order-service/server/helloworld
 
-mkdir order-service/client/helloworld
-cp helloworld.proto order-service/client/helloworld
-protoc -I order-service/client/helloworld order-service/client/helloworld/helloworld.proto --go_out=plugins=grpc:order-service/client/helloworld
+$ mkdir order-service/client/helloworld
+$ cp helloworld.proto order-service/client/helloworld
+$ protoc -I order-service/client/helloworld order-service/client/helloworld/helloworld.proto --go_out=plugins=grpc:order-service/client/helloworld
 ```
 
 ## 2. 서버 멀티플렉싱(Server multiplexing) 구현

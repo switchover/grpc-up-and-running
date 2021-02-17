@@ -69,23 +69,23 @@
 ## 2. Go 서비스용 모듈 생성
 Go 모듈을 위한 디렉토리 생성 후, `go mod` 명령을 통해 다음과 같이 모듈을 생성합니다.
 ```shell
-mkdir -p productinfo/service
-cd productinfo/service
-go mod init productinfo/service
+$ mkdir -p productinfo/service
+$ cd productinfo/service
+$ go mod init productinfo/service
 ```
 
 ## 3. protobuf 파일 복사
 별도로 정의된 `product_info.proto` 파일을 `ecommerce` 디렉토리 생성 후 이 디렉토리로 복사합니다.
 ```shell
-mkdir ecommerce
-cp ../../product_info.proto ecommerce
+$ mkdir ecommerce
+$ cp ../../product_info.proto ecommerce
 ```
 - `product_info.proto`는 임의의 위치에서 복사함 (위 예는 현재 예제 디렉토리 구성의 경우임)
 
 ## 4. Go 언어 Skeleton 생성 
 다음과 같이 이미 설치된 `protoc` 명령을 통해 skeleton 코드를 생성합니다.
 ```shell
-protoc -I ecommerce ecommerce/product_info.proto --go_out=plugins=grpc:ecommerce 
+$ protoc -I ecommerce ecommerce/product_info.proto --go_out=plugins=grpc:ecommerce 
 ```
 
 ## 5. Go 서비스 구현
@@ -176,8 +176,8 @@ func main() {
 ## 7. Go 서버 빌드 및 실행
 다음과 같이 서버를 빌드하고 실행합니다.
 ```shell
-go build -i -v -o bin/server
-bin/server
+$ go build -i -v -o bin/server
+$ bin/server
 ```
 
 ---
@@ -185,10 +185,10 @@ bin/server
 ## 1. Java 프로젝트 디렉토리 구조 생성
 다음과 같이 gradle 프로젝트를 생성합니다.
 ```shell
-mkdir product-info-service
-cd product-info-service
-mkdir -p src/main/java
-mkdir -p src/main/proto
+$ mkdir product-info-service
+$ cd product-info-service
+$ mkdir -p src/main/java
+$ mkdir -p src/main/proto
 ```
 
 ## 2. Gradle 빌드 파일 생성
@@ -197,14 +197,14 @@ mkdir -p src/main/proto
 ## 3. protobuf 파일 복사
 별도로 정의된 `ProductInfo.proto` 파일을 gradle 프로젝트의 `src/main/proto` 디렉토리로 복사합니다.
 ```shell
-cp ../product_info.proto src/main/proto
+$ cp ../product_info.proto src/main/proto
 ```
 - `ProductInfo.proto`는 임의 위치에서 복사함 (위 복사 경로는 현재 예제 디렉토리 구성의 예)
 
 ## 4. Java 언어 Skeleton 생성
 다음과 같이 이미 설치된 `gradle` 명령을 통해 skeleton 코드를 생성합니다.
 ```shell
-gradle build
+$ gradle build
 ```
 - skeleton java 코드는 `build/generated/source/proto/main/grpc/` 및 `build/generated/source/proto/main/java/` 디렉토리 하위에 밑에 생성됨
 
@@ -293,14 +293,14 @@ public class ProductInfoServer {
 ## 7. Java 서비스 빌드
 이제 다음과 같이 gradle을 통해 서비스를 다시 빌드합니다.
 ```shell
-gradle build
+$ gradle build
 ```
 - `build/libs/product-info-service.jar`로 빌드됨
 
 ## 8. Java 서버 실행
 다음과 같이 jar를 실행합니다.
 ```shell
-java -jar build/libs/product-info-service.jar
+$ java -jar build/libs/product-info-service.jar
 ```
 
 ---
@@ -309,23 +309,23 @@ java -jar build/libs/product-info-service.jar
 ## 1. Go 클라이언트용 모듈 생성
 Go 모듈을 위한 디렉토리 생성 후, `go mod` 명령을 통해 다음과 같이 모듈을 생성합니다.
 ```shell
-mkdir -p productinfo/client
-cd productinfo/client
-go mod init productinfo/client
+$ mkdir -p productinfo/client
+$ cd productinfo/client
+$ go mod init productinfo/client
 ```
 
 ## 2. protobuf 파일 복사
 별도로 정의된 `product_info.proto` 파일을 `ecommerce` 디렉토리 생성 후 이 디렉토리로 복사합니다.
 ```shell
-mkdir ecommerce
-cp ../../product_info.proto ecommerce
+$ mkdir ecommerce
+$ cp ../../product_info.proto ecommerce
 ```
 - `product_info.proto`는 임의의 위치에서 복사함 (위 예는 현재 예제 디렉토리 구성의 경우임)
 
 ## 3. Go 언어 Stub 생성 
 다음과 같이 이미 설치된 `protoc` 명령을 통해 skeleton 코드를 생성합니다.
 ```shell
-protoc -I ecommerce ecommerce/product_info.proto --go_out=plugins=grpc:ecommerce 
+$ protoc -I ecommerce ecommerce/product_info.proto --go_out=plugins=grpc:ecommerce 
 ```
 
 ## 4. Go 클라이언트 구현
@@ -380,14 +380,14 @@ func main() {
 ## 5. Go 클라이언트 빌드
 다음과 같이 클라이언트를 빌드합니다.
 ```shell
-go build -i -v -o bin/client
+$ go build -i -v -o bin/client
 ```
 
 ## 6. Go 클라이언트 실행
 클라이언트를 실행하기 전에 Go 서버 또는 Java 서버가 실행되어 있는지 확인합니다.  
 그런 다음 다음과 같이 Go 클라이언트를 실행합니다.
 ```shell
-bin/client
+$ bin/client
 ```
 
 ---
@@ -396,10 +396,10 @@ bin/client
 ## 1. Java 프로젝트 디렉토리 구조 생성
 다음과 같이 gradle 프로젝트를 생성합니다.
 ```shell
-mkdir product-info-client
-cd product-info-client
-mkdir -p src/main/java
-mkdir -p src/main/proto
+$ mkdir product-info-client
+$ cd product-info-client
+$ mkdir -p src/main/java
+$ mkdir -p src/main/proto
 ```
 
 ## 2. Gradle 빌드 파일 생성
@@ -409,14 +409,14 @@ mkdir -p src/main/proto
 ## 3. protobuf 파일 복사
 별도로 정의된 `ProductInfo.proto` 파일을 gradle 프로젝트의 `src/main/proto` 디렉토리로 복사합니다.
 ```shell
-cp ../product_info.proto src/main/proto
+$ cp ../product_info.proto src/main/proto
 ```
 - `ProductInfo.proto`는 임의 위치에서 복사함 (위 복사 경로는 현재 예제 디렉토리 구성의 예)
 
 ## 4. Java 언어 Stub 생성
 다음과 같이 이미 설치된 `gradle` 명령을 통해 skeleton 코드를 생성합니다.
 ```shell
-gradle build
+$ gradle build
 ```
 - skeleton java 코드는 `build/generated/source/proto/main/grpc/` 및 `build/generated/source/proto/main/java/` 디렉토리 하위에 밑에 생성됨
 
@@ -463,12 +463,12 @@ public class ProductInfoClient {
 ## 6. Java 클라이언트 빌드
 이제 다음과 같이 gradle을 통해 클라이언트를 다시 빌드합니다.
 ```shell
-gradle build
+$ gradle build
 ```
 - `build/libs/product-info-client.jar`로 빌드됨
 
 ## 8. Java 클라이언트 실행
 다음과 같이 jar를 실행합니다.
 ```shell
-java -jar build/libs/product-info-client.jar
+$ java -jar build/libs/product-info-client.jar
 ```

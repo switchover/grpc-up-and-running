@@ -17,19 +17,19 @@
 ## 정오
 ### 코드 부분
 - 98 페이지 코드 3-9. `client` 정의 부분 : 변수명 변경
-    ```
+    ```go
     c := pb.NewOrderManagementClient(conn)
     ```
     :arrow_right:
-    ```
+    ```go
     client := pb.NewOrderManagementClient(conn)
     ```
 - 106 페이지 코드 3-12. `asyncClientBidirectionalRPC()` 함수 마지막 부분 : channel 종료 처리
-    ```
+    ```go
     <-c
     ```
     :arrow_right:
-    ```
+    ```go
     close(c)
     ```
 ---

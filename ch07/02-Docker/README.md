@@ -70,8 +70,8 @@ $ docker run -it --network=my-net --hostname=client grpc-productinfo-client
 ## 4. 참고
 추가로 다음과 같이 docker 이미지를 docker hub 등의 Registry로 등록할 수 있습니다.
 ```shell
-docker image tag grpc-productinfo-server switchover/grpc-productinfo-server
-docker image tag grpc-productinfo-client switchover/grpc-productinfo-client
-docker image push switchover/grpc-productinfo-server
-docker image push switchover/grpc-productinfo-client
+$ docker image tag grpc-productinfo-server switchover/grpc-productinfo-server
+$ docker image tag grpc-productinfo-client switchover/grpc-productinfo-client
+$ docker image push switchover/grpc-productinfo-server
+$ docker image push switchover/grpc-productinfo-client
 ```

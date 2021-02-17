@@ -13,9 +13,9 @@
 다음과 같이 빌드 및 실행합니다.
 
 ```shell
-cd echo/server
-go build -i -v -o bin/server main.go
-bin/server
+$ cd echo/server
+$ go build -i -v -o bin/server main.go
+$ bin/server
 ```
 참고로 `echo` 서버는 2개의 서버를 시작합니다.
 
@@ -24,9 +24,9 @@ bin/server
 백엔드 IP의 목록을 반환하는 네임 리졸버를 다음과 같이 구현합니다.
 먼저 네임 리졸버를 사용한 에코(echo) 서비스를 위한 모듈을 다음과 같이 구성합니다.
 ```shell
-mkdir -p echo/client
-cd echo/client
-go mod init echo/client
+$ mkdir -p echo/client
+$ cd echo/client
+$ go mod init echo/client
 ```
 
 실제로 구현된 네일 리졸버는 다음과 같이 구현됩니다. [main.go](echo/client/main.go) (코드 5-15)
