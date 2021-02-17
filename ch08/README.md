@@ -11,6 +11,7 @@
 ## 예제 코드 리스트
 - 코드 8-1 (서비스 정의) : [product_info.proto](01-Gateway/proto/product_info.proto)
 - 코드 8-2 (리버스 프록시 구현) : [main.go](01-Gateway/client/main.go)
+- 코드 8-3 (서비스 리플렉션 활성화) : [main.go](02-ServerReflection/productinfo/server/main.go)
 
 ---
 ## 정오
@@ -31,7 +32,7 @@
 ---
 # 세부 세션별 예제
 * gRPC 게이트웨이 : [gRPC Gateway](./01-Gateway)
-* 서버 리플렉션 : TBD (원서 저장소 참조 : https://github.com/grpc-up-and-running/samples/tree/master/ch08/server-reflection)
+* 서버 리플렉션 : [Server Reflection](./02-ServerReflection)
 
 ---
 # 최종 코드
