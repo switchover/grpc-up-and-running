@@ -136,7 +136,7 @@ $ cd ../../productinfo/client
 $ go build -i -v -o bin/client main.go
 $ bin/client
 2021/02/17 16:38:42 Product ID: 288b146e-70f3-11eb-9bd6-acde48001122 added successfully
-2021/02/17 16:38:42 Product: %!(EXTRA string=id:"288b146e-70f3-11eb-9bd6-acde48001122" name:"Apple iphone 11" description:"Apple iphone 11 is the latest smartphone, launched in September 2019" price:700 )
+2021/02/17 16:38:42 Product: id:"288b146e-70f3-11eb-9bd6-acde48001122" name:"Apple iphone 11" description:"Apple iphone 11 is the latest smartphone, launched in September 2019" price:700
 ```
 
 이제 다음과 같이 jaeger를 접속하여 추적 정보를 확인하십니다.

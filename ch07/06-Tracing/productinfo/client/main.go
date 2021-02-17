@@ -47,7 +47,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Could not get product: %v", err)
 	}
-	log.Printf("Product: ", product.String())
+	log.Printf("Product: %v", product.String())
 	span.End()
 }
 
