@@ -6,6 +6,8 @@
 - 코드 7-4, 7-5 (서버용 쿠버네티스 배포 및 서비스 기술자) : [grpc-prodinfo-server.yaml](03-Kubernetes/productinfo/server/grpc-prodinfo-server.yaml)
 - 코드 7-6 (클라이언트용 쿠버네티스 잡 기술자) : [grpc-prodinfo-client-job.yaml](03-Kubernetes/productinfo/client/grpc-prodinfo-client-job.yaml)
 - 코드 7-7 (서비스용 쿠버네티스 인그레스 기술자) : [grpc-prodinfo-ingress.yaml](03-Kubernetes/productinfo/ingress/grpc-prodinfo-ingress.yaml)
+- 코드 7-8 (서비스 모니터링 활성화) : [main.go](04-OpenCensus/productinfo/server/main.go)
+- 코드 7-9 (클라이언트 모니터링 활성화) : [main.go](04-OpenCensus/productinfo/client/main.go)
 
 ## 정오
 ### 코드 부분
@@ -31,7 +33,7 @@
 * 테스팅 : [Testing](./01-Testing)
 * 도커 배포 : [Docker](./02-Docker)
 * 쿠버네티스 배포 : [Kubernetes](./03-Kubernetes)
-* 오픈센서스 활용 : TBD (원서 저장소 참조 : https://github.com/grpc-up-and-running/samples/tree/master/ch07/grpc-opencensus, https://github.com/grpc-up-and-running/samples/tree/master/ch07/grpc-opencensus-tracing)
+* 오픈센서스 활용 : [OpenCensus](./04-OpenCensus)
 * 프로메테우스 활용 : TBD (원서 저장소 참조 : https://github.com/grpc-up-and-running/samples/tree/master/ch07/grpc-prometheus/go)
 
 ---
