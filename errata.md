@@ -77,9 +77,11 @@
     close(c)
     ```
 
+---
 ## 4장
 해당 없음
 
+---
 ## 5장
 ### 코드 부분
 - 173 페이지 코드 5-15. `Build` 메서드 파라미터 타입 부분 : `resolver.BuildOption` -> `resolver.BuildOptions`
@@ -103,6 +105,7 @@
     func (*exampleResolver) ResolveNow(o resolver.ResolveNowOptions) {}
     ```
 
+---
 ## 6장
 ### 코드 부분
 - 185 페이지 코드 6-1. `grpc.ServerOption` 구조체 리터럴 부분 : 뒤에 `,` 추가 필요 (여러 줄을 사용한 경우)
@@ -130,6 +133,7 @@
     address = "localhost:50051"
     ```
 
+---
 ## 7장
 ### 코드 부분
 - 217 페이지 ghz 실행 : IP(`0.0.0.0:50051`) 부분  
@@ -202,6 +206,7 @@
     product, err := c.GetProduct(ctx, &wrapper.StringValue{Value: r.Value})
     ``` 
 
+---
 ## 8장 
 ### 코드 부분
 - 257 페이지 맨 아래 `curl` 호출 부분 : 마지막 라인은 명령이 아닌 출력 내용으로 마지막 `\` 부분 삭제
@@ -216,3 +221,4 @@
     -d '{"name": "Apple", "description": "iphone7", "price": 699}'
     ```
     - 마지막 `"38e13578-d91e-11e9"` 라인은 출력된 결과로 생성된 제품 ID입니다.
+    
