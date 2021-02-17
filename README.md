@@ -37,6 +37,9 @@
 * [7장. 서비스 수준 gRPC 실행](./ch07)
 * [8장. gRPC 생태계](./ch08)
 
+## 전체 정오 사항
+[Errata](errata.md)
+
 ## 참조 
 - 번역서 안내 : http://acornpub.co.kr/book/grpc
 - 원서 예제 사이트 : https://github.com/grpc-up-and-running/samples/
