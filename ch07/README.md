@@ -34,7 +34,7 @@
 * 도커 배포 : [Docker](./02-Docker)
 * 쿠버네티스 배포 : [Kubernetes](./03-Kubernetes)
 * 오픈센서스 활용 : [OpenCensus](./04-OpenCensus)
-* 프로메테우스 활용 : TBD (원서 저장소 참조 : https://github.com/grpc-up-and-running/samples/tree/master/ch07/grpc-prometheus/go)
+* 프로메테우스 활용 : [Prometheus](./05-PRometheus)
 
 ---
 # 최종 코드
