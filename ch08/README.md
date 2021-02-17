@@ -3,10 +3,16 @@
 # 참고 사항
 ## gRPC Gateway 버전 변경
 기존 v1에서 v2로 변경(20년 10월)됨에 따라 일부 패키지 등이 변경되었습니다.
-자세한 변경 사항은 객 세션별 예제 부분을 참조해 주세요.
+자세한 변경 사항은 객 세션별 예제 부분을 참조해 주세요.  
 (단, 코드 상에서 `github.com/grpc-up-and-running/samples`를 사용하는 경우 v1.16 사용되어, 코드 활용에는 문제가 없음)
 - 참고 : https://github.com/grpc-ecosystem/grpc-gateway/blob/master/docs/docs/development/grpc-gateway_v2_migration_guide.md 
 
+---
+## 예제 코드 리스트
+- 코드 8-1 (서비스 정의) : [product_info.proto](01-Gateway/proto/product_info.proto)
+- 코드 8-2 (리버스 프록시 구현) : [main.go](01-Gateway/client/main.go)
+
+---
 ## 정오
 ### 코드 부분
 - 257 페이지 맨 아래 `curl` 호출 부분 : 마지막 라인은 명령이 아닌 출력 내용으로 마지막 `\` 부분 삭제

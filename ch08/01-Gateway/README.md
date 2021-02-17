@@ -2,7 +2,7 @@
 
 ## 예제 코드 리스트
 - 코드 8-1 (서비스 정의) : [product_info.proto](proto/product_info.proto)
-- 코드 8-2 (리버스 프록시 구현) : (main.go)[client/main.go]
+- 코드 8-2 (리버스 프록시 구현) : [main.go](client/main.go)
 
 ## 1. 서비스 정의
 다음과 같이 HTTP 리소스에 매핑 정보를 갖는 서비스를 정의합니다. [product_info.proto](proto/product_info.proto) (코드 8-1)
@@ -38,7 +38,7 @@ message Product {
 
 ## 2. Skeleton/Stub 소스 생성
 
-이제 다음과 같이 Go Skeleton 및 Stub 코드를 생성합니다. (생성 전에 필요한 패키지를 다운로드힙니다.)
+이제 다음과 같이 Go Skeleton 및 Stub 코드를 생성합니다. (생성 전에 필요한 패키지를 다운로드합니다.)
 
 ```shell
 $ go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
@@ -67,7 +67,7 @@ product_info.proto
 
 
 ## 3. 리버스 프록시 구현
-생성된 코드를 활용하여 다음과 같이 reverse proxy를 구현합니다. (main.go)[client/main.go] (코드 8-2)
+생성된 코드를 활용하여 다음과 같이 reverse proxy를 구현합니다. [main.go](client/main.go) (코드 8-2)
 
 ```go
 package main
