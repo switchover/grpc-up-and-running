@@ -8,6 +8,8 @@
 - 코드 7-7 (서비스용 쿠버네티스 인그레스 기술자) : [grpc-prodinfo-ingress.yaml](03-Kubernetes/productinfo/ingress/grpc-prodinfo-ingress.yaml)
 - 코드 7-8 (서비스 모니터링 활성화) : [main.go](04-OpenCensus/productinfo/server/main.go)
 - 코드 7-9 (클라이언트 모니터링 활성화) : [main.go](04-OpenCensus/productinfo/client/main.go)
+- 코드 7-10, 7-11 (서비스 모니터링 활성화) : [main.go](05-Prometheus/productinfo/server/main.go)
+- 코드 7-12 (클라이언트 모니터링 활성화) : [main.go](05-Prometheus/productinfo/client/main.go)
 
 ## 정오
 ### 코드 부분
@@ -34,7 +36,7 @@
 * 도커 배포 : [Docker](./02-Docker)
 * 쿠버네티스 배포 : [Kubernetes](./03-Kubernetes)
 * 오픈센서스 활용 : [OpenCensus](./04-OpenCensus)
-* 프로메테우스 활용 : [Prometheus](./05-PRometheus)
+* 프로메테우스 활용 : [Prometheus](./05-Prometheus)
 
 ---
 # 최종 코드
