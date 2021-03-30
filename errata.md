@@ -30,7 +30,7 @@
         string id = 1;
         string name = 2;
         string description = 3;
-        float price = 4;    // 추가
+        float price = 4;
     }
     ```
     
